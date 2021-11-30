@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284F92A52753A46F00EBF7ED /* NewLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284F92A42753A46F00EBF7ED /* NewLoginViewController.swift */; };
+		284F92A72753A48800EBF7ED /* NewLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284F92A62753A48800EBF7ED /* NewLoginViewController.storyboard */; };
+		284F92AA2753A4D100EBF7ED /* InstantiateFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284F92A92753A4D100EBF7ED /* InstantiateFromStoryboard.swift */; };
 		28AE8AAF27536D1500FCFDE7 /* FeatureLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 28AE8AAE27536D1500FCFDE7 /* FeatureLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28AE8ABB27536D6800FCFDE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8ABA27536D6800FCFDE7 /* LoginViewController.swift */; };
 		28AE8ABD27536D9100FCFDE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8ABC27536D9100FCFDE7 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		284F92A42753A46F00EBF7ED /* NewLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoginViewController.swift; sourceTree = "<group>"; };
+		284F92A62753A48800EBF7ED /* NewLoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewLoginViewController.storyboard; sourceTree = "<group>"; };
+		284F92A92753A4D100EBF7ED /* InstantiateFromStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateFromStoryboard.swift; sourceTree = "<group>"; };
 		28AE8AAB27536D1500FCFDE7 /* FeatureLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AE8AAE27536D1500FCFDE7 /* FeatureLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureLogin.h; sourceTree = "<group>"; };
 		28AE8ABA27536D6800FCFDE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +36,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		284F92A82753A4B400EBF7ED /* InstantiateFromStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				284F92A92753A4D100EBF7ED /* InstantiateFromStoryboard.swift */,
+			);
+			path = InstantiateFromStoryboard;
+			sourceTree = "<group>";
+		};
+		284F92AB2753A4E700EBF7ED /* NewLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				284F92A42753A46F00EBF7ED /* NewLoginViewController.swift */,
+				284F92A62753A48800EBF7ED /* NewLoginViewController.storyboard */,
+			);
+			path = NewLoginViewController;
+			sourceTree = "<group>";
+		};
 		28AE8AA127536D1500FCFDE7 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +105,8 @@
 		28AE8AB927536D4E00FCFDE7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				284F92AB2753A4E700EBF7ED /* NewLoginViewController */,
+				284F92A82753A4B400EBF7ED /* InstantiateFromStoryboard */,
 				28AE8ABA27536D6800FCFDE7 /* LoginViewController.swift */,
 				28AE8ABC27536D9100FCFDE7 /* Extensions.swift */,
 			);
@@ -158,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284F92A72753A48800EBF7ED /* NewLoginViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +196,8 @@
 			files = (
 				28AE8ABB27536D6800FCFDE7 /* LoginViewController.swift in Sources */,
 				28AE8ABD27536D9100FCFDE7 /* Extensions.swift in Sources */,
+				284F92A52753A46F00EBF7ED /* NewLoginViewController.swift in Sources */,
+				284F92AA2753A4D100EBF7ED /* InstantiateFromStoryboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +349,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Dmitrii.FeatureLogin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -351,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Dmitrii.FeatureLogin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
