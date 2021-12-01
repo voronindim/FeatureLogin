@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282EB59727580C8A00F5C82F /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282EB59627580C8A00F5C82F /* LoginPageView.swift */; };
+		282EB59927580C9200F5C82F /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282EB59827580C9200F5C82F /* Placeholder.swift */; };
+		282EB59B27580D3700F5C82F /* LoginAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282EB59A27580D3700F5C82F /* LoginAppModel.swift */; };
+		282EB59E27580D8300F5C82F /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282EB59D27580D8300F5C82F /* LoginModule.swift */; };
+		282EB5A127580DC100F5C82F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282EB5A027580DC100F5C82F /* Coordinator.swift */; };
+		282EB5A327580ECE00F5C82F /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282EB5A227580ECE00F5C82F /* ViewControllerFactory.swift */; };
 		284F92A52753A46F00EBF7ED /* NewLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284F92A42753A46F00EBF7ED /* NewLoginViewController.swift */; };
 		284F92A72753A48800EBF7ED /* NewLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284F92A62753A48800EBF7ED /* NewLoginViewController.storyboard */; };
 		284F92AA2753A4D100EBF7ED /* InstantiateFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284F92A92753A4D100EBF7ED /* InstantiateFromStoryboard.swift */; };
 		28AE8AAF27536D1500FCFDE7 /* FeatureLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 28AE8AAE27536D1500FCFDE7 /* FeatureLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28AE8ABB27536D6800FCFDE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8ABA27536D6800FCFDE7 /* LoginViewController.swift */; };
 		28AE8ABD27536D9100FCFDE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8ABC27536D9100FCFDE7 /* Extensions.swift */; };
+		DAAE2B8E006A81D5EF9B4BE2 /* Pods_FeatureLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1666FCD779DC459E40C69E4 /* Pods_FeatureLogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		048C973CC722B9224C3C2007 /* Pods-FeatureLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureLogin.debug.xcconfig"; path = "Target Support Files/Pods-FeatureLogin/Pods-FeatureLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		282EB59627580C8A00F5C82F /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
+		282EB59827580C9200F5C82F /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		282EB59A27580D3700F5C82F /* LoginAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppModel.swift; sourceTree = "<group>"; };
+		282EB59D27580D8300F5C82F /* LoginModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModule.swift; sourceTree = "<group>"; };
+		282EB5A027580DC100F5C82F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		282EB5A227580ECE00F5C82F /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		284F92A42753A46F00EBF7ED /* NewLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoginViewController.swift; sourceTree = "<group>"; };
 		284F92A62753A48800EBF7ED /* NewLoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewLoginViewController.storyboard; sourceTree = "<group>"; };
 		284F92A92753A4D100EBF7ED /* InstantiateFromStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateFromStoryboard.swift; sourceTree = "<group>"; };
@@ -23,6 +37,8 @@
 		28AE8AAE27536D1500FCFDE7 /* FeatureLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureLogin.h; sourceTree = "<group>"; };
 		28AE8ABA27536D6800FCFDE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		28AE8ABC27536D9100FCFDE7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A1666FCD779DC459E40C69E4 /* Pods_FeatureLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeatureLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F111BAF1D02494A079E6ABF6 /* Pods-FeatureLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureLogin.release.xcconfig"; path = "Target Support Files/Pods-FeatureLogin/Pods-FeatureLogin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,12 +46,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAAE2B8E006A81D5EF9B4BE2 /* Pods_FeatureLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B41C9E72760A0A94E80C10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				048C973CC722B9224C3C2007 /* Pods-FeatureLogin.debug.xcconfig */,
+				F111BAF1D02494A079E6ABF6 /* Pods-FeatureLogin.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		2537B19910439EA839321028 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1666FCD779DC459E40C69E4 /* Pods_FeatureLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		282EB59C27580D7400F5C82F /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				282EB59D27580D8300F5C82F /* LoginModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		282EB59F27580DB800F5C82F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				282EB5A027580DC100F5C82F /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		284F92A82753A4B400EBF7ED /* InstantiateFromStoryboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,11 +104,22 @@
 			path = NewLoginViewController;
 			sourceTree = "<group>";
 		};
+		2896432C2757ED8A008CF454 /* LoginPageView */ = {
+			isa = PBXGroup;
+			children = (
+				282EB59627580C8A00F5C82F /* LoginPageView.swift */,
+				282EB59827580C9200F5C82F /* Placeholder.swift */,
+			);
+			path = LoginPageView;
+			sourceTree = "<group>";
+		};
 		28AE8AA127536D1500FCFDE7 = {
 			isa = PBXGroup;
 			children = (
 				28AE8AAD27536D1500FCFDE7 /* FeatureLogin */,
 				28AE8AAC27536D1500FCFDE7 /* Products */,
+				01B41C9E72760A0A94E80C10 /* Pods */,
+				2537B19910439EA839321028 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,8 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				28AE8AB627536D3600FCFDE7 /* App */,
-				28AE8AB727536D3800FCFDE7 /* Presentation */,
 				28AE8AB827536D3E00FCFDE7 /* Infrastructure */,
+				282EB59C27580D7400F5C82F /* Module */,
 				28AE8AAE27536D1500FCFDE7 /* FeatureLogin.h */,
 			);
 			path = FeatureLogin;
@@ -83,21 +145,17 @@
 		28AE8AB627536D3600FCFDE7 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				282EB59A27580D3700F5C82F /* LoginAppModel.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		28AE8AB727536D3800FCFDE7 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presentation;
 			sourceTree = "<group>";
 		};
 		28AE8AB827536D3E00FCFDE7 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				282EB59F27580DB800F5C82F /* Coordinator */,
 				28AE8AB927536D4E00FCFDE7 /* UI */,
+				282EB5A227580ECE00F5C82F /* ViewControllerFactory.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -105,6 +163,7 @@
 		28AE8AB927536D4E00FCFDE7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2896432C2757ED8A008CF454 /* LoginPageView */,
 				284F92AB2753A4E700EBF7ED /* NewLoginViewController */,
 				284F92A82753A4B400EBF7ED /* InstantiateFromStoryboard */,
 				28AE8ABA27536D6800FCFDE7 /* LoginViewController.swift */,
@@ -131,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28AE8AB227536D1500FCFDE7 /* Build configuration list for PBXNativeTarget "FeatureLogin" */;
 			buildPhases = (
+				95BA202A483609CE6C048DED /* [CP] Check Pods Manifest.lock */,
 				28AE8AA627536D1500FCFDE7 /* Headers */,
 				28AE8AA727536D1500FCFDE7 /* Sources */,
 				28AE8AA827536D1500FCFDE7 /* Frameworks */,
@@ -189,15 +249,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		95BA202A483609CE6C048DED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeatureLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28AE8AA727536D1500FCFDE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				282EB59B27580D3700F5C82F /* LoginAppModel.swift in Sources */,
+				282EB5A327580ECE00F5C82F /* ViewControllerFactory.swift in Sources */,
 				28AE8ABB27536D6800FCFDE7 /* LoginViewController.swift in Sources */,
 				28AE8ABD27536D9100FCFDE7 /* Extensions.swift in Sources */,
+				282EB59E27580D8300F5C82F /* LoginModule.swift in Sources */,
 				284F92A52753A46F00EBF7ED /* NewLoginViewController.swift in Sources */,
+				282EB59727580C8A00F5C82F /* LoginPageView.swift in Sources */,
 				284F92AA2753A4D100EBF7ED /* InstantiateFromStoryboard.swift in Sources */,
+				282EB59927580C9200F5C82F /* Placeholder.swift in Sources */,
+				282EB5A127580DC100F5C82F /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +419,7 @@
 		};
 		28AE8AB327536D1500FCFDE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 048C973CC722B9224C3C2007 /* Pods-FeatureLogin.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -359,6 +451,7 @@
 		};
 		28AE8AB427536D1500FCFDE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F111BAF1D02494A079E6ABF6 /* Pods-FeatureLogin.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
