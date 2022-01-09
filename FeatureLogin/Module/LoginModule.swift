@@ -7,12 +7,15 @@
 
 import Foundation
 import UIKit
+import Networking
 
 public final class LoginModule {
     private let coordinator: Coordinator
     
-    public init(rootNavigationController: UINavigationController, successLoginHandler: @escaping () -> Void) {
-        let appModel = LoginAppModel()
+    public init(rootNavigationController: UINavigationController, apiSession: AsyncGenericApi, successLoginHandler: @escaping (UUID) -> Void) {
+        let gateway = AuthGateway(apiSession: apiSession)
+        let useCase = AuthUseCase(gateway: gateway)
+        let appModel = LoginAppModel(authUseCase: useCase)
         let viewControllerFactory = ViewControllerFactory(appModel: appModel, successLoginHandler: successLoginHandler)
         coordinator = Coordinator(navigationController: rootNavigationController, viewControllerFactory: viewControllerFactory)
     }

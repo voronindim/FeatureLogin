@@ -30,8 +30,8 @@ struct Home: View {
     
     // MARK: - @States
     
-    @State private var userName = ""
-    @State private var password = ""
+    @State private var userName = "Dimvor"
+    @State private var password = "Dimvor"
     
     // MARK: - Handlers
     

@@ -14,19 +14,19 @@ final class ViewControllerFactory {
     // MARK: - Private Proeprties
     
     private let appModel: LoginAppModel
-    private let successLoginHandler: () -> Void
+    private let successLoginHandler: (UUID) -> Void
     
     // MARK: - Initiaize
     
-    init(appModel: LoginAppModel, successLoginHandler: @escaping () -> Void) {
+    init(appModel: LoginAppModel, successLoginHandler: @escaping (UUID) -> Void) {
         self.appModel = appModel
         self.successLoginHandler = successLoginHandler
     }
     
     func loginViewController() -> UIViewController {
         let loginView = LoginPageView { userName, password in
-            self.appModel.login(userName: userName, password: password, completion: { [weak self] in
-                self!.successLoginHandler()
+            self.appModel.login(userName: userName, password: password, completion: { [weak self] uuid in
+                self!.successLoginHandler(uuid)
             })
         } forgotButtonDidTapped: {
         } signupButtonDidTapped: {

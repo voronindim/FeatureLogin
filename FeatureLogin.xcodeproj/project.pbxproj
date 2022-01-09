@@ -20,6 +20,10 @@
 		28AE8ABB27536D6800FCFDE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8ABA27536D6800FCFDE7 /* LoginViewController.swift */; };
 		28AE8ABD27536D9100FCFDE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8ABC27536D9100FCFDE7 /* Extensions.swift */; };
 		DAAE2B8E006A81D5EF9B4BE2 /* Pods_FeatureLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1666FCD779DC459E40C69E4 /* Pods_FeatureLogin.framework */; };
+		F59618C82789E0F400259843 /* AuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59618C72789E0F400259843 /* AuthUseCase.swift */; };
+		F59618CA2789E12D00259843 /* UseCaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59618C92789E12D00259843 /* UseCaseError.swift */; };
+		F59618CC2789E17A00259843 /* AuthGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59618CB2789E17A00259843 /* AuthGateway.swift */; };
+		F59618CE2789E23200259843 /* GatewayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59618CD2789E23200259843 /* GatewayError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		28AE8ABC27536D9100FCFDE7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A1666FCD779DC459E40C69E4 /* Pods_FeatureLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeatureLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F111BAF1D02494A079E6ABF6 /* Pods-FeatureLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureLogin.release.xcconfig"; path = "Target Support Files/Pods-FeatureLogin/Pods-FeatureLogin.release.xcconfig"; sourceTree = "<group>"; };
+		F59618C72789E0F400259843 /* AuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCase.swift; sourceTree = "<group>"; };
+		F59618C92789E12D00259843 /* UseCaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseError.swift; sourceTree = "<group>"; };
+		F59618CB2789E17A00259843 /* AuthGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGateway.swift; sourceTree = "<group>"; };
+		F59618CD2789E23200259843 /* GatewayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				282EB59A27580D3700F5C82F /* LoginAppModel.swift */,
+				F59618C62789E07400259843 /* Gateways */,
+				F59618C52789E06D00259843 /* UseCases */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -170,6 +180,24 @@
 				28AE8ABC27536D9100FCFDE7 /* Extensions.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		F59618C52789E06D00259843 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F59618C72789E0F400259843 /* AuthUseCase.swift */,
+				F59618C92789E12D00259843 /* UseCaseError.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F59618C62789E07400259843 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				F59618CB2789E17A00259843 /* AuthGateway.swift */,
+				F59618CD2789E23200259843 /* GatewayError.swift */,
+			);
+			path = Gateways;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,15 +307,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59618C82789E0F400259843 /* AuthUseCase.swift in Sources */,
 				282EB59B27580D3700F5C82F /* LoginAppModel.swift in Sources */,
 				282EB5A327580ECE00F5C82F /* ViewControllerFactory.swift in Sources */,
+				F59618CC2789E17A00259843 /* AuthGateway.swift in Sources */,
 				28AE8ABB27536D6800FCFDE7 /* LoginViewController.swift in Sources */,
 				28AE8ABD27536D9100FCFDE7 /* Extensions.swift in Sources */,
 				282EB59E27580D8300F5C82F /* LoginModule.swift in Sources */,
 				284F92A52753A46F00EBF7ED /* NewLoginViewController.swift in Sources */,
 				282EB59727580C8A00F5C82F /* LoginPageView.swift in Sources */,
+				F59618CE2789E23200259843 /* GatewayError.swift in Sources */,
 				284F92AA2753A4D100EBF7ED /* InstantiateFromStoryboard.swift in Sources */,
 				282EB59927580C9200F5C82F /* Placeholder.swift in Sources */,
+				F59618CA2789E12D00259843 /* UseCaseError.swift in Sources */,
 				282EB5A127580DC100F5C82F /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
