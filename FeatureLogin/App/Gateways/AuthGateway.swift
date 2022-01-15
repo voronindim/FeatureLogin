@@ -8,6 +8,11 @@
 import Foundation
 import Networking
 
+struct GatewayResultWithToken {
+    let uuid: UUID
+    let token: String
+}
+
 final class AuthGateway {
     private let apiSession: AsyncGenericApi
     
@@ -15,13 +20,13 @@ final class AuthGateway {
         self.apiSession = apiSession
     }
     
-    func auth(login: String, password: String) async -> Result<UUID, GatewayError> {
+    func auth(login: String, password: String) async -> Result<GatewayResultWithToken, GatewayError> {
         do {
             let gatewayResult: GatewayResult = try await apiSession.postRequest(data: GatewayRequest(login: login, password: password), with: urlRequest())
             guard gatewayResult.errorCode == 0 else {
                 return .failure(.loginError)
             }
-            return .success(UUID(uuidString: gatewayResult.guid)!)
+            return .success(GatewayResultWithToken(uuid: UUID(uuidString: gatewayResult.guid)!, token: gatewayResult.token))
         } catch {
             return .failure(.unknownError)
         }
@@ -45,4 +50,5 @@ fileprivate struct GatewayRequest: Encodable {
 fileprivate struct GatewayResult: Decodable {
     let errorCode: Int
     let guid: String
+    let token: String
 }

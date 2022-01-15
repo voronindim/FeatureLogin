@@ -7,6 +7,16 @@
 
 import Foundation
 
+struct UseCaseResult {
+    let uuid: UUID
+    let token: String
+    
+    init(gatewayResult: GatewayResultWithToken) {
+        self.uuid = gatewayResult.uuid
+        self.token = gatewayResult.token
+    }
+}
+
 final class AuthUseCase {
     private let gateway: AuthGateway
     
@@ -14,10 +24,10 @@ final class AuthUseCase {
         self.gateway = gateway
     }
     
-    func auth(login: String, password: String) async -> Result<UUID, UseCaseError> {
+    func auth(login: String, password: String) async -> Result<UseCaseResult, UseCaseError> {
         switch await gateway.auth(login: login, password: password) {
-        case .success(let uuid):
-            return .success(uuid)
+        case .success(let gatewayResult):
+            return .success(UseCaseResult(gatewayResult: gatewayResult))
         case .failure(_):
             return .failure(.unknownError)
         }

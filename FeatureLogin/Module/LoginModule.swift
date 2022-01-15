@@ -12,7 +12,7 @@ import Networking
 public final class LoginModule {
     private let coordinator: Coordinator
     
-    public init(rootNavigationController: UINavigationController, apiSession: AsyncGenericApi, successLoginHandler: @escaping (UUID) -> Void) {
+    public init(rootNavigationController: UINavigationController, apiSession: AsyncGenericApi, successLoginHandler: @escaping (UUID, _ token: String) -> Void) {
         let gateway = AuthGateway(apiSession: apiSession)
         let useCase = AuthUseCase(gateway: gateway)
         let appModel = LoginAppModel(authUseCase: useCase)

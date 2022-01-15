@@ -15,13 +15,13 @@ final class LoginAppModel {
         self.authUseCase = authUseCase
     }
     
-    func login(userName: String, password: String, completion: ((UUID) -> Void)?) {
+    func login(userName: String, password: String, completion: ((UUID, _ token: String) -> Void)?) {
         Task {
             let result = await authUseCase.auth(login: userName, password: password)
             DispatchQueue.main.async {
                 switch result {
-                case .success(let uuid):
-                    completion?(uuid)
+                case .success(let useCaseResult):
+                    completion?(useCaseResult.uuid, useCaseResult.token)
                 case .failure(_):
                     return
                 }
